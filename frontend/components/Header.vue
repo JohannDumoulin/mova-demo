@@ -12,7 +12,7 @@
                 </ul>
             </nav>
 
-            <p>0</p>
+            <i class="icon-shopping-bag"></i>
 
             <div>Menu</div>
         </div>
