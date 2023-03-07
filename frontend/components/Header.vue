@@ -1,10 +1,10 @@
 <template>
-    <header class="bg-slate-500 p-6 flex justify-between text-white">
-        <img src="~assets/logo_white.svg" alt="">
+    <header class="p-6 flex justify-between text-white absolute w-full">
+        <img src="~assets/img/logo_white.svg" alt="">
 
         <div class="flex gap-8">
             <nav>
-                <ul class="flex gap-8">
+                <ul class="flex gap-8 text-lg">
                     <li><NuxtLink to="/brewery">Brewery</NuxtLink></li>
                     <li><NuxtLink to="/restaurant">Restaurant</NuxtLink></li>
                     <li><NuxtLink to="/shop">Shop</NuxtLink></li>
@@ -12,7 +12,7 @@
                 </ul>
             </nav>
 
-            <i class="icon-shopping-bag"></i>
+            <i class="icon-shopping-bag text-xl"></i>
 
             <div>Menu</div>
         </div>
