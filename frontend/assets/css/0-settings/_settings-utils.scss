@@ -1,0 +1,13 @@
+@layer components {
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+    .absolute-x-center {
+        @apply absolute left-1/2 -translate-x-1/2;
+    }
+
+    .absolute-y-center {
+        @apply absolute top-1/2 -translate-y-1/2;
+    }
+}

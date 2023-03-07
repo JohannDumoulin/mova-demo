@@ -1,7 +1,9 @@
 <template>
-  <div>
-<!--    <NuxtWelcome />-->
+    <!--    <NuxtWelcome />-->
 
-      <Header/>
-  </div>
+    <Header/>
+
+    <HeroHeader/>
+
+    <div class="h-screen"></div>
 </template>

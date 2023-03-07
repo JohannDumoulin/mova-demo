@@ -25,6 +25,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-thin-up:before {
+    content: "\e901";
+}
+.icon-arrow-thin-right:before {
+    content: "\e902";
+}
+.icon-arrow-thin-left:before {
+    content: "\e903";
+}
+.icon-arrow-thin-down:before {
+    content: "\e904";
+}
 .icon-shopping-bag:before {
     content: "\e900";
 }

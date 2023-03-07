@@ -1,5 +1,5 @@
 <template>
-    <header class="p-6 flex justify-between text-white absolute w-full">
+    <header class="p-6 flex justify-between text-white absolute w-full z-10">
         <img src="~assets/img/logo_white.svg" alt="">
 
         <div class="flex gap-8">
