@@ -4,6 +4,7 @@ module.exports = {
             colors: {
                 primary: {
                     base: '#16322c',
+                    dark: '#0f1d18',
                     hover: '#193933',
                 },
             },

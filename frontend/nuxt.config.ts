@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    css: ["@/assets/css/index.scss"],
     modules: [
         '@nuxtjs/tailwindcss'
     ],
-    css: ["@/assets/css/index.scss"],
+    plugins: [
+        '~/plugins/lenis.client.js',
+        '~/plugins/lax.client.js'
+    ]
 })

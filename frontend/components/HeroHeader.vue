@@ -1,6 +1,6 @@
 <template>
     <div class="pt-96 relative">
-        <img src="~assets/img/hero_header_hp.jpg" alt="Cheers mova beer" class="absolute top-0 h-4/5 w-full object-cover">
+        <img src="~assets/img/hero_header_hp.jpg" alt="Cheers mova beer" class="absolute top-0 h-4/5 w-full object-cover lax-fade-y">
 
         <div class="custom-gradient absolute top-0 h-full w-full"></div>
 
