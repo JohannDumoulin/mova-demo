@@ -1,5 +1,5 @@
 <template>
-    <header class="p-6 flex justify-between text-white absolute w-full z-10">
+    <header class="p-6 flex justify-between text-white absolute w-full z-10 js-header">
         <NuxtLink to="/">
             <img src="~assets/img/logo_white.svg" alt="Mova Logo">
         </NuxtLink>
@@ -14,7 +14,7 @@
                 </ul>
             </nav>
 
-            <div class="flex">
+            <div class="flex cursor-pointer">
                 <i class="icon-shopping-bag text-xl"></i>
                 <p class="ml-1 text-xs mt-0.5">0</p>
             </div>

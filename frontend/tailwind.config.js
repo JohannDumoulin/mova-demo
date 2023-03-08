@@ -15,6 +15,9 @@ module.exports = {
             height: {
                 heroCards: '380px',
             },
+            translate: {
+                'full2': '200%'
+            },
             width: {
                 heroCards: '400px',
             }

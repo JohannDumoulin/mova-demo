@@ -3,7 +3,9 @@
 
     <Header/>
 
+    <FixedMenu/>
+
     <HeroHeader/>
 
-    <div class="h-screen"></div>
+    <div class="h-screen animated"></div>
 </template>

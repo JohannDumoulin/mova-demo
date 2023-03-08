@@ -5,6 +5,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss'
     ],
     plugins: [
+        '~/plugins/appear.client.js',
         '~/plugins/lax.client.js',
         '~/plugins/lenis.client.js',
         '~/plugins/popmotion.client.js',
