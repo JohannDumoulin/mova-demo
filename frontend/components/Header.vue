@@ -1,18 +1,23 @@
 <template>
     <header class="p-6 flex justify-between text-white absolute w-full z-10">
-        <img src="~assets/img/logo_white.svg" alt="">
+        <NuxtLink to="/">
+            <img src="~assets/img/logo_white.svg" alt="Mova Logo">
+        </NuxtLink>
 
         <div class="flex gap-8">
             <nav>
                 <ul class="flex gap-8 text-lg">
-                    <li><NuxtLink to="/brewery">Brewery</NuxtLink></li>
-                    <li><NuxtLink to="/restaurant">Restaurant</NuxtLink></li>
-                    <li><NuxtLink to="/shop">Shop</NuxtLink></li>
-                    <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+                    <li v-for="link in menu" @mouseenter="menuIn" @mouseleave="menuOut" class="relative overflow-hidden">
+                        <NuxtLink :to="link.url">{{ link.name }}</NuxtLink>
+                        <span class="block w-full h-px bg-white -translate-x-full"></span>
+                    </li>
                 </ul>
             </nav>
 
-            <i class="icon-shopping-bag text-xl"></i>
+            <div class="flex">
+                <i class="icon-shopping-bag text-xl"></i>
+                <p class="ml-1 text-xs mt-0.5">0</p>
+            </div>
 
             <div>Menu</div>
         </div>
@@ -20,9 +25,41 @@
 </template>
 
 <script setup>
+import usePopMotion from '/plugins/popmotion.client'
 
+const { menuIn, menuOut } = usePopMotion()
+
+const menu = [
+    {
+        name: 'Brewery',
+        url: '/brewery'
+    },
+    {
+        name: 'Restaurant',
+        url: '/restaurant'
+    },
+    {
+        name: 'Shop',
+        url: '/shop'
+    },
+    {
+        name: 'Contact',
+        url: '/contact'
+    }
+]
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.menu-link {
+    @apply overflow-hidden;
 
+    &::after {
+        content: '';
+        @apply block w-full h-px bg-white -translate-x-full transition;
+    }
+
+    &:hover::after {
+        @apply translate-x-0;
+    }
+}
 </style>

@@ -1,11 +1,34 @@
 import { animate } from "popmotion"
 
 export default () => {
-    animate({
-        from: 0,
-        to: 100,
-        onUpdate: latest => console.log(latest)
-    })
+    /**
+     *
+     * @param e
+     */
+    const menuIn = (e) => {
+        animate({
+            from: 100,
+            to: 0,
+            duration: 300,
+            onUpdate: latest => e.target.querySelector('span').style.transform = `translateX(-${latest}%)`
+        })
+    }
+
+    /**
+     *
+     * @param e
+     */
+    const menuOut = (e) => {
+        animate({
+            from: 0,
+            to: 100,
+            duration: 300,
+            onUpdate: latest => e.target.querySelector('span').style.transform = `translateX(${latest}%)`
+        })
+    }
+
+    return {
+        menuIn,
+        menuOut,
+    }
 }
-
-
