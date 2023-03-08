@@ -19,7 +19,10 @@
                 <p class="ml-1 text-xs mt-0.5">0</p>
             </div>
 
-            <div>Menu</div>
+            <div class="flex flex-col gap-2.5 justify-center group w-20 overflow-hidden cursor-pointer">
+                <div class="h-px w-full bg-white group-hover:translate-x-4 transition ease-in-out duration-500"></div>
+                <div class="h-px w-full bg-white group-hover:-translate-x-4 transition ease-in-out duration-500"></div>
+            </div>
         </div>
     </header>
 </template>
