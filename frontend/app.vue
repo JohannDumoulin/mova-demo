@@ -1,11 +1,12 @@
 <template>
     <!--    <NuxtWelcome />-->
-
     <Header/>
+
+    <HeroHeader/>
 
     <FixedMenu/>
 
-    <HeroHeader/>
+    <FullSizeMenu/>
 
     <div class="h-screen animated"></div>
 </template>

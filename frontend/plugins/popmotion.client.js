@@ -5,7 +5,7 @@ export default () => {
      *
      * @param e
      */
-    const menuIn = (e) => {
+    const underlineIn = (e) => {
         animate({
             from: 100,
             to: 0,
@@ -18,7 +18,7 @@ export default () => {
      *
      * @param e
      */
-    const menuOut = (e) => {
+    const underlineOut = (e) => {
         animate({
             from: 0,
             to: 100,
@@ -28,7 +28,7 @@ export default () => {
     }
 
     return {
-        menuIn,
-        menuOut,
+        underlineIn,
+        underlineOut,
     }
 }
