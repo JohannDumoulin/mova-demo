@@ -1,8 +1,14 @@
 <template>
-    <header class="p-6 flex justify-between text-white absolute w-full z-10 js-header">
-        <Logo/>
+    <header class="p-6 flex justify-between text-white absolute w-full z-20 js-header header" :class="{ isActive: getState }">
+        <FixedMenu/>
 
-        <div class="flex gap-8">
+        <FullSizeMenu/>
+
+        <NuxtLink to="/">
+            <img src="~assets/img/logo_white.svg" alt="Mova Logo">
+        </NuxtLink>
+
+        <div class="flex gap-8 header__headerMenu">
             <nav>
                 <ul class="flex gap-8 text-lg">
                     <li v-for="link in menu" @mouseenter="underlineIn" @mouseleave="underlineOut" class="relative overflow-hidden">
@@ -30,7 +36,7 @@ import usePopMotion from '/plugins/popmotion.client'
 import useFullSizeMenu from '/plugins/fullSizeMenu.client'
 
 const { underlineIn, underlineOut } = usePopMotion()
-const { toggleState } = useFullSizeMenu()
+const { getState, toggleState } = useFullSizeMenu()
 
 const menu = [
     {
@@ -52,8 +58,6 @@ const menu = [
 ]
 </script>
 
-<style scoped lang="scss">
-.test {
-    @apply w-auto;
-}
+<style scoped>
+
 </style>

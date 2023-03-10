@@ -4,7 +4,10 @@
 @import "./0-settings/_settings-utils";
 
 //1-base
-@import "./1-base/base-default";
+@import "./1-base/_base-default";
+
+//2-components
+@import "./2-components/_components-menu";
 
 @tailwind base;
 @tailwind components;

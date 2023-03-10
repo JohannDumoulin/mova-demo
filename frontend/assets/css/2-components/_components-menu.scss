@@ -1,0 +1,55 @@
+$fadeHeaderMenuDuration: 500ms;
+$maskClipPathDuration: 700ms;
+$maskClipPathDelay: calc(#{$maskClipPathDuration} + 200ms);
+
+.header {
+    .header__headerMenu {
+        //transition: opacity $fadeHeaderMenuDuration ease-in-out;
+        //@apply opacity-100;
+    }
+
+    .header__fullSizeMenu {
+
+
+        //.header__fullSizeMenu-close {
+        //    @apply ;
+        //}
+        //
+        .header__fullSizeMenu-mask {
+            clip-path: inset(0% 0% 100%);
+            //transition: clip-path $maskClipPathDuration ease-in-out $maskClipPathDelay;
+        }
+
+        .header__fullSizeMenu-maskReverse {
+            clip-path: inset(100% 0% 0%);
+            //transition: clip-path $maskClipPathDuration ease-in-out $maskClipPathDelay;
+        }
+    }
+    //
+    //&.isActive {
+    //    @apply w-1/2;
+    //    transition: width 0s ease-in-out $fadeHeaderMenuDuration;
+    //
+    //    .header__headerMenu {
+    //        @apply opacity-0 pointer-events-none;
+    //    }
+    //
+    //    .header__fullSizeMenu {
+    //        @apply opacity-100 pointer-events-auto;
+    //
+    //        .header__fullSizeMenu-close {
+    //
+    //        }
+    //
+    //        .header__fullSizeMenu-mask {
+    //            clip-path: inset(0%)
+    //        }
+    //
+    //        .header__fullSizeMenu-maskReverse {
+    //            clip-path: inset(0%)
+    //        }
+    //    }
+    //}
+}
+
+

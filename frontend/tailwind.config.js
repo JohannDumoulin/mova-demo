@@ -1,4 +1,8 @@
 module.exports = {
+    safelist: [
+        'pointer-events-none',
+        'opacity-1',
+    ],
     theme: {
         extend: {
             colors: {

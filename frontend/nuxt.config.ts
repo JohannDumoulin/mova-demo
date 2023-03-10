@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     plugins: [
         '~/plugins/appear.client.js',
         '~/plugins/fullSizeMenu.client.js',
+        '~/plugins/headerMenuAnimation.client.js',
         '~/plugins/lax.client.js',
         '~/plugins/lenis.client.js',
         '~/plugins/popmotion.client.js',
