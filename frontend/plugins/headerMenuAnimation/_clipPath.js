@@ -5,7 +5,7 @@ export default () => {
      *
      */
     const clipPathIn = () => {
-        const fullSizeMenu = document.querySelector('.header__fullSizeMenu')
+        const fullSizeMenu = document.querySelector('.js-header__fullSizeMenu')
         const mask = document.querySelector('.header__fullSizeMenu-mask')
         const maskReverse = document.querySelector('.header__fullSizeMenu-maskReverse')
 
@@ -28,7 +28,7 @@ export default () => {
      *
      */
     const clipPathOut = () => {
-        const fullSizeMenu = document.querySelector('.header__fullSizeMenu')
+        const fullSizeMenu = document.querySelector('.js-header__fullSizeMenu')
         const mask = document.querySelector('.header__fullSizeMenu-mask')
         const maskReverse = document.querySelector('.header__fullSizeMenu-maskReverse')
 
@@ -36,6 +36,7 @@ export default () => {
             from: 0,
             to: 100,
             duration: 700,
+            elapsed: -400,
             ease: easeInOut,
             onUpdate: latest => {
                 mask.style.clipPath = `inset(0% 0% ${latest}%)`

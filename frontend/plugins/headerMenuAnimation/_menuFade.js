@@ -5,7 +5,7 @@ export default () => {
      *
      */
     const menuFadeIn = () => {
-        const headerMenus = document.querySelectorAll('.header__headerMenu')
+        const headerMenus = document.querySelectorAll('.js-header__headerMenu')
 
         animate({
             from: 0,
@@ -22,7 +22,7 @@ export default () => {
      */
     const menuFadeOut = () => {
         return new Promise((resolve, reject) => {
-            const headerMenus = document.querySelectorAll('.header__headerMenu')
+            const headerMenus = document.querySelectorAll('.js-header__headerMenu')
 
             headerMenus.forEach(menu => menu.classList.add('pointer-events-none'))
 

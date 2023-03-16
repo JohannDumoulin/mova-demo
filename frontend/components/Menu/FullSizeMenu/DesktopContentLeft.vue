@@ -1,6 +1,6 @@
 <template>
-    <div class="w-3/10 border-r border-secondary-base/50 h-full pt-24 p-6 flex flex-col justify-between">
-        <nav>
+    <div class="w-3/10 h-full pt-24 p-6 flex flex-col justify-between relative">
+        <nav class="js-appear">
             <ul class="flex flex-col gap-5">
                 <li v-for="link in subMenu"
                     @mouseenter="underlineIn"
@@ -12,7 +12,7 @@
             </ul>
         </nav>
 
-        <div>
+        <div class="js-appear">
             <p class="capitalize text-secondary-base/50 mb-2 text-sm">addresses</p>
             <p>Pratsi avenue, 8, Dnipro</p>
 
@@ -20,6 +20,8 @@
                 how to reach
             </NuxtLink>
         </div>
+
+        <div class="js-header__fullSizeMenu-line absolute w-px h-full bg-secondary-base/50 top-0 right-0 translate-y-full"></div>
     </div>
 </template>
 

@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss'
     ],
     plugins: [
-        '~/plugins/appear.client.js',
+        '~/plugins/appearFixedMenu.client.js',
         '~/plugins/fullSizeMenu.client.js',
         '~/plugins/headerMenuAnimation.client.js',
         '~/plugins/lax.client.js',

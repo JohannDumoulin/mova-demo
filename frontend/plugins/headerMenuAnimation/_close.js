@@ -5,7 +5,7 @@ export default () => {
      *
      */
     const closeIn = () => {
-        const closeMenu = document.querySelector('.header__fullSizeMenu-close')
+        const closeMenu = document.querySelector('.js-header__fullSizeMenu-close')
 
         closeMenu.classList.remove('pointer-events-none')
 
@@ -22,9 +22,9 @@ export default () => {
      *
      */
     const closeOut = () => {
-        const closeMenu = document.querySelector('.header__fullSizeMenu-close')
+        const closeMenu = document.querySelector('.js-header__fullSizeMenu-close')
 
-        closeMenu.classList.remove('pointer-events-none')
+        closeMenu.classList.add('pointer-events-none')
 
         animate({
             from: 1,

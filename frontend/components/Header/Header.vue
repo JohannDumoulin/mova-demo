@@ -1,5 +1,5 @@
 <template>
-    <header class="p-6 flex justify-between text-white absolute w-full z-20 js-header header" :class="{ isActive: getState }">
+    <header class="p-6 flex justify-between text-white absolute w-full z-20 js-header" :class="{ isActive: getState }">
         <FixedMenu/>
 
         <FullSizeMenu/>
@@ -8,7 +8,7 @@
             <img src="~assets/img/logo_white.svg" alt="Mova Logo">
         </NuxtLink>
 
-        <div class="flex gap-8 header__headerMenu">
+        <div class="flex gap-8 js-header__headerMenu">
             <nav>
                 <ul class="flex gap-8 text-lg">
                     <li v-for="link in menu" @mouseenter="underlineIn" @mouseleave="underlineOut" class="relative overflow-hidden">

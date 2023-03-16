@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white/40 fixed z-10 flex gap-6 py-3 px-6 rounded-full border border-primary-hover
-                border-px top-6 right-6 -translate-y-full2 js-fixedMenu transition-transform duration-500 header__headerMenu">
+                border-px top-6 right-6 -translate-y-full2 js-fixedMenu transition-transform duration-500 js-header__headerMenu">
         <div class="flex text-primary-base cursor-pointer">
             <i class="icon-shopping-bag text-xl"></i>
             <p class="ml-1 text-xs mt-0.5">0</p>

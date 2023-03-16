@@ -5,7 +5,7 @@ export default () => {
      *
      */
     const imgScaleIn = () => {
-        const img = document.querySelector('.header__fullSizeMenu-img')
+        const img = document.querySelector('.js-header__fullSizeMenu-img')
 
         animate({
             from: 1.3,
