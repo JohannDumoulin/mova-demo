@@ -4,5 +4,7 @@
 
     <HeroHeader/>
 
-    <div class="h-screen animated"></div>
+    <AboutUs/>
+
+    <div class="h-screen"></div>
 </template>

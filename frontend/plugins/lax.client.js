@@ -24,6 +24,20 @@ export default () => {
             }
         )
 
+        lax.addElements(
+            '.lax-about-us',  // Element selector rule
+            {             // Animation data
+                scrollY: {
+                    translateY: [
+                        [700, 2000],
+                        [-50, 50]
+                    ]
+                }
+            },
+            {
+                style: {}   // Element options
+            }
+        )
     }
 }
 

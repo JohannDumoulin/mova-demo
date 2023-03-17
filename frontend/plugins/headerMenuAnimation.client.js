@@ -14,8 +14,6 @@ const { lineIn, lineOut } = useLine()
 const { appearIn, appearOut } = useAppear()
 const { appearChainedIn, appearChainedOut } = useAppearChained()
 
-
-
 export default () => {
     /**
      *
