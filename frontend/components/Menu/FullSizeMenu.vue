@@ -12,7 +12,7 @@
             <DesktopContentRight/>
         </div>
 
-        <div class="h-full w-3/10">
+        <div class="h-full w-3/10 -ml-1">
             <div class="h-full header__fullSizeMenu-mask">
                 <img src="~assets/img/menu_side.jpg" alt="Beer" class="h-full object-cover js-header__fullSizeMenu-img">
             </div>
