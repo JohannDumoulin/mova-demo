@@ -21,7 +21,7 @@ export default () => {
     const underlineOut = (e) => {
         animate({
             from: 0,
-            to: 100,
+            to: 101,
             duration: 300,
             onUpdate: latest => e.target.querySelector('span').style.transform = `translateX(${latest}%)`
         })

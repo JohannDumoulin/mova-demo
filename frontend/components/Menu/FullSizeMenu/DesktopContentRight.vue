@@ -26,7 +26,7 @@
                    class="relative overflow-hidden w-fit mb-2"
                 >
                     <NuxtLink to="/">{{ item }}</NuxtLink>
-                    <span class="block w-full h-px bg-white -translate-x-full"></span>
+                    <span class="block w-full h-px bg-white -translate-x-101"></span>
                 </div>
             </div>
         </div>

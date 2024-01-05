@@ -30,7 +30,8 @@ module.exports = {
                 '400': '400ms',
             },
             translate: {
-                'full2': '200%'
+                'full2': '200%',
+                '101': '101%'
             },
             width: {
                 heroCards: '400px',

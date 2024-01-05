@@ -8,12 +8,12 @@
             <img src="~assets/img/logo_white.svg" alt="Mova Logo">
         </NuxtLink>
 
-        <div class="flex gap-8 js-header__headerMenu">
+        <div class="flex gap-x-8 js-header__headerMenu">
             <nav>
-                <ul class="flex gap-8 text-lg">
+                <ul class="flex gap-x-8 text-lg">
                     <li v-for="link in menu" @mouseenter="underlineIn" @mouseleave="underlineOut" class="relative overflow-hidden">
                         <NuxtLink :to="link.url">{{ link.name }}</NuxtLink>
-                        <span class="block w-full h-px bg-white -translate-x-full"></span>
+                        <span class="block w-full h-px bg-white -translate-x-101"></span>
                     </li>
                 </ul>
             </nav>
