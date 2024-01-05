@@ -1,7 +1,9 @@
 import Lenis from '@studio-freight/lenis'
 
+let lenis
+
 export default () => {
-    const lenis = new Lenis({
+    lenis = new Lenis({
         duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
         direction: 'vertical', // vertical, horizontal
@@ -16,14 +18,17 @@ export default () => {
 //get scroll value
     lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
         // console.log({ scroll, limit, velocity, direction, progress })
+        // console.log(lenis.isStopped)
     })
 
-    function raf(time) {
+    const raf = (time) => {
         lenis.raf(time)
         requestAnimationFrame(raf)
     }
 
     requestAnimationFrame(raf)
 }
+
+export const setLenis = (value) => lenis.isStopped = value
 
 

@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import useHeaderMenuAnimation from '/plugins/headerMenuAnimation.client'
+import {setLenis} from "./lenis.client";
 
 const { openAnimation, closeAnimation } = useHeaderMenuAnimation()
 
@@ -13,9 +14,15 @@ export default () => {
     const toggleState = () => {
         isActive.value = !isActive.value
 
-        if (isActive.value) openAnimation()
+        if (isActive.value) {
+            openAnimation()
+            setLenis(true)
+        }
 
-        if (!isActive.value) closeAnimation()
+        if (!isActive.value) {
+            closeAnimation()
+            setLenis(false)
+        }
     }
 
     /**
